@@ -1,0 +1,32 @@
+@startuml
+class Cliente{
+# nombre : String
+# id : int
+# valorCompra : int
+# valorOriginal: int
++ calcularTotalPagar ()
++ descontar (porcentaje : double)
++ aumentar (porcentaje : double)
++ esCompraAlta ()
++ imprimirResumen ()
+}
+
+class clienteRegular{
++ calcularTotalPagar ()
+}
+class clienteFrecuente{
+- numeroCompras
++ calcularTotalPagar ()
++ imprimirResumen ()
+}
+class clienteMayorista{
+- cantidadProductos : int
++ calcularTotalPagar ()
++ imprimirResumen ()
+}
+
+Cliente<|-- clienteRegular
+Cliente<|-- clienteFrecuente
+Cliente<|-- clienteMayorista
+
+@enduml
