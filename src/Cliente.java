@@ -42,10 +42,10 @@ public class Cliente {
         this.setValorCompra(this.valorCompra);
     }
     public void descontar(int porcentaje){
-        this.setValorCompra(this.getValorCompra() - (this.getValorCompra()*(porcentaje/100)));
+        this.setValorCompra(this.getValorCompra() - (int)(this.getValorCompra() * (porcentaje / 100.0)));
     }
     public void aumentar(int percent){
-        this.setValorCompra(this.getValorCompra() + (this.getValorCompra()*(percent/100)));
+        this.setValorCompra(this.getValorCompra() + (int)(this.getValorCompra() * (percent / 100.0)));
     }
     public boolean esCompraAlta(){
         return this.valorCompra > 300000;

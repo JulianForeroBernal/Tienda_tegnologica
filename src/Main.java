@@ -133,9 +133,9 @@ public class Main {
                     do {
                         System.out.println("""
                                 Tipo de cliente:
-                                1. Particular
-                                2. Paciente EPS
-                                3. Paciente VIP
+                                1. Cliente regular
+                                2. Cliente frecuente
+                                3. Cliente Mayorista
                                 0. Salir de la búsqueda
                                """);
                         tipo = scan.nextInt();
